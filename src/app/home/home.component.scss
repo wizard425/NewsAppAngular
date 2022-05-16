@@ -1,0 +1,28 @@
+.page {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .content {
+    width: 80%;
+
+    .section1 {
+      margin-top: 40px;
+    }
+
+    .section2 {
+      height: 200px;
+      display: grid;
+      margin-top: 25px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section {
+        .section-title{
+            font-size: x-large;
+            border-bottom: 5px green solid;
+        }
+
+    }
+  }
+}

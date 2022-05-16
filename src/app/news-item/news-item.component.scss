@@ -1,0 +1,21 @@
+.card {
+  cursor: pointer;
+  position: relative;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card {
+  position: relative;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+}

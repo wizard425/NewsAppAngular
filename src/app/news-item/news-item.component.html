@@ -1,0 +1,18 @@
+<div class="card" [style.background-image]="newsItem.image_url ? 'url(' + newsItem.image_url + ')' : 'none'">
+        <div *ngIf="newsItem.category.includes('sports')">
+            Sports
+        </div>
+    <div id="bottom">
+        {{newsItem.title}}
+    </div>
+</div>
+<!--
+<div class="main">
+    <div class="column1">
+      <h2>W3docs</h2>
+    </div>
+    <div class="column2">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </div>
+    <div id="bottom">Bottom Content Div</div>
+  </div>-->

@@ -1,0 +1,25 @@
+.header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .navigation {
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo {
+      img {
+        width: 70px;
+        height: auto;
+      }
+    }
+    div {
+      vertical-align: middle;
+    }
+  }
+}
+
+.content {
+  background-color: #e5e5e5;
+}
