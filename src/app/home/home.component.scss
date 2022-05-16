@@ -11,18 +11,26 @@
     }
 
     .section2 {
-      height: 200px;
+      height: 300px;
       display: grid;
       margin-top: 25px;
       grid-template-columns: 1fr 1fr 1fr;
+      ne-news-item {
+        padding: 0px 5px;
+      }
     }
 
     .section {
         .section-title{
             font-size: x-large;
-            border-bottom: 5px green solid;
         }
-
     }
   }
+}
+
+.green-border{
+  border-bottom: 5px green solid;
+}
+.orange-border{
+  border-bottom: 5px #fc039d solid;
 }

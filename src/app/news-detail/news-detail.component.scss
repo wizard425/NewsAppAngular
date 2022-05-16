@@ -1,0 +1,26 @@
+.page {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .content {
+    border-radius: 15px;
+    width: 80%;
+    background-color: white;
+    margin-top: 30px;
+
+    .body {
+      padding: 0px 20px 0px 20px;
+    }
+
+    .title {
+        padding: 0px 20px 0px 20px;
+      }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px 15px 0px 0px;
+    }
+  }
+}

@@ -9,13 +9,16 @@ import { news } from '../testnews';
 })
 export class NewsService {
 
-  api_key ='pub_7426577d323e916c74763312296e65d7a9a4';
+  api_key = 'pub_7426577d323e916c74763312296e65d7a9a4';
   baseUrl = "https://newsdata.io/api/1/news";
 
   constructor(private http: HttpClient) { }
 
 
-  getLatestNews(category: string): Observable<any>{
-    return this.http.get<any>(`${this.baseUrl}?apikey=${this.api_key}&category=${category}`);
+  getLatestNews(): Observable<any> {
+    //return this.http.get<any>(`${this.baseUrl}?apikey=${this.api_key}&category=${category}`);
+    return new Observable(observer => {
+      observer.next(news);
+    });
   }
 }

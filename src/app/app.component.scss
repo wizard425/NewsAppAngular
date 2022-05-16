@@ -20,6 +20,12 @@
   }
 }
 
+a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .content {
   background-color: #e5e5e5;
 }

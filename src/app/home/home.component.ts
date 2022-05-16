@@ -19,11 +19,9 @@ export class HomeComponent implements OnInit {
   }
 
   getNews() {
-    this.activatedRoute.params.subscribe(params => {
-      this.newsService.getLatestNews(params.category).subscribe(res => {
-        this.newsItems = res.results;
+      this.newsService.getLatestNews().subscribe(res => {
+        this.newsItems = res;
         console.log(res);
-      });
     })
   }
 

@@ -8,12 +8,14 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NewsItemComponent } from './news-item/news-item.component';
+import { NewsDetailComponent } from './news-detail/news-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NewsItemComponent
+    NewsItemComponent,
+    NewsDetailComponent
   ],
   imports: [
     BrowserModule,
