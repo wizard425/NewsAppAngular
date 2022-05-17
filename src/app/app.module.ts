@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NewsItemComponent } from './news-item/news-item.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
+import { TopicComponent } from './topic/topic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NewsItemComponent,
-    NewsDetailComponent
+    NewsDetailComponent,
+    TopicComponent
   ],
   imports: [
     BrowserModule,

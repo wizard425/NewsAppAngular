@@ -1,6 +1,7 @@
 .page {
   background-color: lightgray;
   display: flex;
+  height: 100%;
   flex-direction: row;
   justify-content: space-around;
   .content {
@@ -14,8 +15,8 @@
     }
 
     .title {
-        padding: 0px 20px 0px 20px;
-      }
+      padding: 0px 20px 0px 20px;
+    }
 
     img {
       width: 100%;

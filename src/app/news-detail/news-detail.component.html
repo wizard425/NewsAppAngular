@@ -1,6 +1,10 @@
 <div class="page">
     <div class="content">
         <div class="image"><img [src]="item?.image_url"></div>
+        <div class="author">
+            <div>Laatste update: {{item.pubDate}}</div>
+            <div *ngIf="item.creator">Bron: {{item.creator[0]}}</div>
+        </div>
         <div class="title">
             <h3>{{item?.title}}</h3>
         </div>

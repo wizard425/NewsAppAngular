@@ -1,6 +1,12 @@
-<div class="card" (click)="onClicked()">
+<div class="card" (click)="onClicked()" *ngIf="newsItem">
   <div class="img" [style.background-image]="newsItem.image_url ? 'url(' + newsItem.image_url + ')' : 'none'"></div>
   <div class="title">
     {{newsItem.title}}
+  </div>
+</div>
+
+<div style="margin-top: 40px" *ngIf="suggestions">
+  <div *ngFor="let suggestion of suggestions">
+    <ne-news-item [newsItem]="suggestion"></ne-news-item>
   </div>
 </div>

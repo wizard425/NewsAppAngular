@@ -16,9 +16,13 @@ export class NewsService {
 
 
   getLatestNews(): Observable<any> {
-    //return this.http.get<any>(`${this.baseUrl}?apikey=${this.api_key}&category=${category}`);
-    return new Observable(observer => {
+    return this.http.get<any>(`${this.baseUrl}?apikey=${this.api_key}`);
+    /*return new Observable(observer => {
       observer.next(news);
-    });
+    });*/
+  }
+
+  getNewsFromTopic(topic: string): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}?apikey=${this.api_key}&category=${topic}`);
   }
 }

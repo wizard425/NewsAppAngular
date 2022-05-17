@@ -10,6 +10,7 @@ import { NewsItem } from '../models/newsitem.model';
 export class NewsItemComponent implements OnInit {
 
   @Input() newsItem!: NewsItem;
+  @Input() suggestions!: NewsItem[];
 
   constructor(private router: Router) { }
 

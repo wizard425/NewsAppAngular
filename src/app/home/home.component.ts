@@ -15,13 +15,14 @@ export class HomeComponent implements OnInit {
   constructor(private newsService: NewsService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.getNews();
+    if (this.newsItems.length == 0)
+      this.getNews();
   }
 
   getNews() {
-      this.newsService.getLatestNews().subscribe(res => {
-        this.newsItems = res;
-        console.log(res);
+    this.newsService.getLatestNews().subscribe(res => {
+      this.newsItems = res.results;
+      console.log(res);
     })
   }
 

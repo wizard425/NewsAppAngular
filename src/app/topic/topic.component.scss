@@ -1,0 +1,36 @@
+.page {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .content {
+      width: 80%;
+  
+      .section1 {
+        margin-top: 40px;
+      }
+  
+      .section2 {
+        height: 300px;
+        display: grid;
+        margin-top: 25px;
+        grid-template-columns: 1fr 1fr 1fr;
+        ne-news-item {
+          padding: 0px 5px;
+        }
+      }
+  
+      .section {
+          .section-title{
+              font-size: x-large;
+          }
+      }
+    }
+  }
+  
+  .green-border{
+    border-bottom: 5px green solid;
+  }
+  .orange-border{
+    border-bottom: 5px #fc039d solid;
+  }
